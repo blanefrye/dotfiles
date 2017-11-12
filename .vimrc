@@ -4,12 +4,6 @@ set nocompatible
 filetype on
 filetype plugin on
 syntax enable
-colorscheme dracula
-
-"colorscheme atom-dark-256
-"colorscheme molokai
-"colorscheme desertEx
-"set background=dark
 
 " Tab/indent stuff
 set autoindent
@@ -25,8 +19,8 @@ set mouse=a
 " Line numbers
 set number
 
-" No hidden buffers
-"set nohidden
+" Hidden buffers
+set hidden
 
 " Search
 set incsearch
@@ -59,6 +53,11 @@ nnoremap <S-Tab> :bprevious<CR>
 execute pathogen#infect()
 
 "---------
+" Color
+"---------
+colorscheme nord
+
+"---------
 " CtrlP
 "---------
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
@@ -70,7 +69,7 @@ let g:ctrlp_cmd = 'CtrlP'
 "---------
 " Airline
 "---------
-let g:airline_theme='dracula'
+let g:airline_theme='nord'
 set noshowmode
 set laststatus=2 "make visible
 " let g:airline#extensions#syntastic#enabled = 0
@@ -81,8 +80,9 @@ let g:airline#extensions#tabline#enabled = 1
 " youcompleteme
 "---------
 "let g:ycm_extra_conf_globlist=['/Users/bfrye/Documents/firmware/*']
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/youcompleteme/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0
+let g:ycm_extra_conf_globlist = ['~/firmware/*']
 
 "---------
 " cscope
