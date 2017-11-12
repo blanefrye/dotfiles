@@ -4,6 +4,13 @@ export TERM=xterm-256color
 
 export PYTHONPATH=/Users/bfrye/Documents/infrastructure:
 
-alias ls="ls -G"
+if [[ $(uname -s) == Linux ]]
+then
+    alias ls="ls --color=auto"
+else
+    alias ls="ls -G"
+fi
+
+alias ls="ls --color=auto"
 alias ll="ls -l"
 alias grep="grep --color=auto"
