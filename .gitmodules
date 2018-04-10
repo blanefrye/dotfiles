@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/nord-vim"]
 	path = .vim/bundle/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
