@@ -1,3 +1,7 @@
+if has('python3')
+  silent! python3 1
+endif
+
 set nocompatible
 
 " Color stuff
@@ -55,9 +59,9 @@ execute pathogen#infect()
 "---------
 " Color
 "---------
-colorscheme nord
-set background:light
-set background:dark
+colorscheme dracula
+"set background:light
+"set background:dark
 
 "---------
 " CtrlP
@@ -81,10 +85,9 @@ let g:airline#extensions#tabline#enabled = 1
 "---------
 " youcompleteme
 "---------
-"let g:ycm_extra_conf_globlist=['/Users/bfrye/Documents/firmware/*']
+let g:ycm_extra_conf_globlist=['/Users/bfrye/Documents/firmware/*']
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0
-let g:ycm_extra_conf_globlist = ['~/firmware/*']
 
 "---------
 " NERDTree
