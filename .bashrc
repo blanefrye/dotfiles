@@ -16,3 +16,4 @@ if [ -f $HOME/.bashrc_tesla ]; then
     . $HOME/.bashrc_tesla
 fi
 
+export PATH=/usr/local/bin/:$PATH

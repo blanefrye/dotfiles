@@ -13,7 +13,7 @@ env:
 
 # Window dimensions in character columns and lines
 # (changes require restart)
-dimensions:
+window.dimensions:
   columns: 80
   lines: 24
 
@@ -54,49 +54,71 @@ font:
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
-    x: 0.0
-    y: 0.0
+    x: 0
+    y: 0
 
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
   # false.
   use_thin_strokes: false
 
-# Should display the render timer
-render_timer: false
-
-# Use custom cursor colors. If true, display the cursor in the cursor.foreground
-# and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: false
-
-# Colors (Nord)
+# Colors (Dracula)
 colors:
-   # Default colors
-   primary:
-     background: '0x1E2430'
-     foreground: '0xD8DEE9'
+  # Default colors
+  primary:
+    background: '0x181a26'
+    foreground: '0xf8f8f2'
 
-   # Normal colors
-   normal:
-     black:   '0x3B4252'
-     red:     '0xBF616A'
-     green:   '0xA3BE8C'
-     yellow:  '0xEBCB8B'
-     blue:    '0x81A1C1'
-     magenta: '0xB48EAD'
-     cyan:    '0x88C0D0'
-     white:   '0xE5E9F0'
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xcaa9fa'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xbfbfbf'
 
-   # Bright colors
-   bright:
-     black:   '0x4C566A'
-     red:     '0xBF616A'
-     green:   '0xA3BE8C'
-     yellow:  '0xEBCB8B'
-     blue:    '0x81A1C1'
-     magenta: '0xB48EAD'
-     cyan:    '0x8FBCBB'
-     white:   '0xECEFF4'
+  # Bright colors
+  bright:
+    black:   '0x282a35'
+    red:     '0xff6e67'
+    green:   '0x5af78e'
+    yellow:  '0xf4f99d'
+    blue:    '0xcaa9fa'
+    magenta: '0xff92d0'
+    cyan:    '0x9aedfe'
+    white:   '0xe6e6e6'
+
+## Colors (Nord)
+#colors:
+#   # Default colors
+#   primary:
+#     background: '0x1E2430'
+#     foreground: '0xD8DEE9'
+#
+#   # Normal colors
+#   normal:
+#     black:   '0x3B4252'
+#     red:     '0xBF616A'
+#     green:   '0xA3BE8C'
+#     yellow:  '0xEBCB8B'
+#     blue:    '0x81A1C1'
+#     magenta: '0xB48EAD'
+#     cyan:    '0x88C0D0'
+#     white:   '0xE5E9F0'
+#
+#   # Bright colors
+#   bright:
+#     black:   '0x4C566A'
+#     red:     '0xBF616A'
+#     green:   '0xA3BE8C'
+#     yellow:  '0xEBCB8B'
+#     blue:    '0x81A1C1'
+#     magenta: '0xB48EAD'
+#     cyan:    '0x8FBCBB'
+#     white:   '0xECEFF4'
 
 # Visual Bell
 #
@@ -168,7 +190,7 @@ live_config_reload: true
 # be escape sequences, but they can be configured to send arbitrary strings of
 # bytes. Possible values of `action` include `Paste` and `PasteSelection`.
 key_bindings:
-  - { key: N,        mods: Command, command: { program: "open", args: ["-n", "/Applications/Alacritty.app"] } }
+  - { key: N,        mods: Command, action: SpawnNewInstance             }
   - { key: V,        mods: Command, action: Paste                        }
   - { key: C,        mods: Command, action: Copy                         }
   - { key: Q,        mods: Command, action: Quit                         }
@@ -247,7 +269,7 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
-hide_cursor_when_typing: false
+mouse.hide_when_typing: false
 
 # Shell
 #

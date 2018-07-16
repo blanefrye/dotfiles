@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/bfrye/Documents/firmware/components'
 let g:netrw_dirhist_2='/Users/bfrye/Documents/firmware/components/UI/translate/committed'
 let g:netrw_dirhist_3='/home/bfrye/firmware/components/vc/tas2/code/app'
+let g:netrw_dirhist_4='/Users/bfrye/Documents/firmware/components/vc/tas2/code/dev'
