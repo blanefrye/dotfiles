@@ -11,3 +11,8 @@ fi
 
 alias ll="ls -l"
 alias grep="grep --color=auto"
+
+if [ -f $HOME/.bashrc_tesla ]; then
+    . $HOME/.bashrc_tesla
+fi
+
