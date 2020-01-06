@@ -1,5 +1,7 @@
 PROMPT=$'\n''[%F{blue}%~%f] %# '
 
+if [[ $TERM == xterm ]]; then TERM=xterm-256color; fi
+
 if [[ $(uname -s) == Linux ]]
 then
     alias ls="ls --color=auto"
@@ -10,3 +12,4 @@ fi
 alias ll="ls -l"
 
 export PATH=~/.cargo/bin:$PATH
+

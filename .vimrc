@@ -5,6 +5,7 @@ endif
 set nocompatible
 
 " Color stuff
+set t_Co=256
 filetype on
 filetype plugin on
 syntax enable
