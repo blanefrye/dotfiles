@@ -14,17 +14,14 @@ env:
 # Window dimensions in character columns and lines
 # (changes require restart)
 window.dimensions:
-  columns: 80
-  lines: 24
+  columns: 120
+  lines: 30
 
 # The FreeType rasterizer needs to know the device DPI for best results
 # (changes require restart)
 dpi:
-  x: 108.0
-  y: 108.0
-
-# Display tabs using this many cells (changes require restart)
-tabspaces: 4
+  x: 221.0
+  y: 221.0
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
@@ -50,7 +47,7 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 16.0
+  size: 13.0
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
@@ -60,7 +57,7 @@ font:
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
   # false.
-  use_thin_strokes: false
+  use_thin_strokes: true
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
@@ -146,12 +143,12 @@ colors:
 #
 # To completely disable the visual bell, set its duration to 0.
 #
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
 
 # Background opacity
-background_opacity: 1.0
+background_opacity: 0.999999
 
 # Live config reload (changes require restart)
 live_config_reload: true

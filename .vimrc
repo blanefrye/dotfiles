@@ -74,7 +74,7 @@ let g:ctrlp_cmd = 'CtrlP'
 "---------
 " Airline
 "---------
-let g:airline_theme='nord'
+let g:airline_theme='dracula'
 set noshowmode
 set laststatus=2 "make visible
 " let g:airline#extensions#syntastic#enabled = 0

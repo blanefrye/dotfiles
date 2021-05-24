@@ -12,4 +12,5 @@ fi
 alias ll="ls -l"
 
 export PATH=~/.cargo/bin:$PATH
+export PATH="/usr/local/sbin:$PATH"
 
